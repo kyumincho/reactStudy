@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>메인화면</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title" class="btn">메인화면</h1>
+            <div class="js-clock">
+                <h1>00:00</h1>
+            </div>
+            <form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+                <input name="q" type="hidden" />
+                <input name="content" type="text" id="content" placeholder="   검색내용을 입력해주세요."/>
+            </form>
+            <br>
+            <form class="js-form form">
+                <input type="text" placeholder="   What is your name?">
+            </form>
+            <h4 class="js-greetings greetings"></h4>
+            <form class="js-toDoForm">
+                <input type="text" placeholder="   Write a to do" />
+            </form>
+            <ul class="js-toDoList">
+            </ul>
+        </div>
+        <span class="js-weather"></span>
+
+        <script src="js/clock.js"></script>
+        <script src="js/greeting.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/bg.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/search.js"></script>
+    </body>
+</html>
